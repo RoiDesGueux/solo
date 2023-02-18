@@ -345,7 +345,7 @@ display: none;
     */
 #imagePrincipale {
   padding-top: 260px;
-  background: url(/img/background/arriere.png) no-repeat 60% 60%;
+  background: url(img/background/arriere.png) no-repeat 60% 60%;
   background-size: cover;
   height: 799px;
 }
