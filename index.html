@@ -1,229 +1,601 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href= "img/background/roi.png" type="image/x-icon">
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content=" " />
+        <!-- Title -->
+        <title>Jeux&Logiciels</title>
+        <!-- Favicon  -->
+        <link rel="shortcut icon" href="assets/images/logo.png" />
 
+        <!-- *********** CSS Files *********** -->
+        <!-- Plugin CSS -->
+        <link rel="stylesheet" href="assets/css/plugins.css" />
+        <!-- Styles CSS -->
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="assets/css/responsive.css" />       
+    </head>
 
-    <title>Roi_Des_Gueux</title>
+    <body class="template-index">
+        <!-- Start Page Loader -->
+        <div class="page-loading"></div>
+        <!-- End Page Loader -->
 
-    <link rel="stylesheet" href="lien.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <body>
-      <header class="header">
-            <nav class="nav">
-              <ul class="ul1">
-                <a href="#"><img src="img/nav/logo.png" alt="Logo" id="logo" width="75px"></a>
-                <div class="nav-droite">
-                  <li><a href="https://roidesgueux.github.io/actu/">Actualités</a></li>
-                  <li><a href="https://roidesgueux.github.io/mes-chaines/">Mes chaînes</a></li>
-                  <li><a href="https://roidesgueux.github.io/liens/">Jeux&Logiciels</a></li>
-                  <li><a href="https://roidesgueux.github.io/anime/">Animé</a></li>
-                  <li><a href="https://roidesgueux.github.io/contactez-moi/">Nous contacter</a></li>
-                </div>
-              </nav >
-              <div class="overlay-menu-mobile" onclick="closeMenuMobile()"></div>
-              <header class="header">
-                
-                  <nav class="header__nav">
-                      <div class="header__nav__close" onclick="closeMenuMobile()">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                              stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                          </svg>
-                      </div>
-                      <ul class="header__nav__menu">
-                          <li class="header__nav__menu__link">
-                              <a class="titre-nav" href="https://roidesgueux.github.io/mes-chaines/" >Mes chaînes</a>
-                              <div class="sous_titre">
-                              <img src="img/nav/tiktok.png" alt="tiktok" class="img_sous_texte" width="45px">
-                              <a href="https://www.tiktok.com/@roi_des_geueux" id="nnav"><h4 href="https://www.tiktok.com/@roi_des_geueux" id="nnav"> TikTok </h4></a>
-                              </div>
-                              <div class="sous_titre">
-                              <img src="img/nav/twitch.png" alt="tiktok" class="img_sous_texte" width="45px">
-                              <a href="https://www.twitch.tv/roi_des_gueux_max" id="nnav"><h4 href="https://www.twitch.tv/roi_des_gueux_max" id="nnav"> Twitch </h4></a>
-                              </div>
-                              <div class="sous_titre">
-                              <img src="img/nav/youtube.png" alt="tiktok" class="img_sous_texte" width="45px">
-                              <a href="https://www.youtube.com/@Roi_Des_Gueux " id="nnav"><h4 href="https://www.youtube.com/@Roi_Des_Gueux " id="nnav"> Youtube </h4></a>
-                              </div>
-                          </li>
-                          <li class="header__nav__menu__link">
-                              <a class="titre-nav" href="https://roidesgueux.github.io/liens/ ">Jeux&Logiciels</a>
-                              <div class="sous_titre">
-                                <img src="img/nav/solo.png" alt="tiktok" class="img_sous_texte" width="43px">
-                                <a href="https://roidesgueux.github.io/solo/" id="nnav"> <h3 href="https://roidesgueux.github.io/solo/" id="nnav"> Jeux solo </h3></a>
-                                </div>
-                                <div class="sous_titre">
-                                <img src="img/nav/deux.png" alt="tiktok" class="img_sous_texte" width="40px">
-                                <a href="https://roidesgueux.github.io/multi/" id="nnav"><h3 href="https://roidesgueux.github.io/multi/" id="nnav"> Jeux multi </h3></a>
-                                </div>
-                                <div class="sous_titre">
-                                   <img src="img/nav/logiciel.png" alt="tiktok" class="img_sous_texte" width="43px">
-                                   <a href="https://roidesgueux.github.io/logiciel/" id="nnav"> <h3 href="https://roidesgueux.github.io/logiciel/"> Logiciels </h3></a>
-                                    </div>
-                          </li>
-                          <li class="header__nav__menu__link">
-                              <a class="titre-nav" href="https://roidesgueux.github.io/anime/ ">Animé</a>
-                              <div class="sous_titre">
-                                <img src="img/nav/vostfr.png" alt="tiktok" class="img_sous_texte" width="40px">
-                                <a href="https://roidesgueux.github.io/vostfr/" id="nnav"><h1 href="https://roidesgueux.github.io/vostfr/" id="nnav"> Vostfr</h1></a>
-                                </div>
-                                <div class="sous_titre">
-                                <img src="img/nav/fr.png" alt="tiktok" class="img_sous_texte" width="40px">
-                                <a href="https://roidesgueux.github.io/VF/" id="nnav"><h1 href="https://roidesgueux.github.io/VF/" id="nnav"> VF</h1></a>
-                                </div>
-                                <div class="sous_titre">
-                                    <img src="img/nav/plannig.png" alt="tiktok" class="img_sous_texte" width="40px">
-                                    <a href="https://roidesgueux.github.io/planification/" id="nnav"><h1 href="https://roidesgueux.github.io/planification/"> Planning</h1></a>
-                                    </div>
-                          </li>
-          
-                      </ul>
-                  </nav>
-                  <div class="header__burger" onclick="openMenuMobile()">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                          stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                      </svg>
-                  </div>
-              </header>
-              <script>
-                function openMenuMobile() {
-                    document.querySelector('.header__nav').classList.add('open');
-                    document.querySelector('.overlay-menu-mobile').classList.add('open');
-                }
-        
-                function closeMenuMobile() {
-                    document.querySelector('.header__nav').classList.remove('open');
-                    document.querySelector('.overlay-menu-mobile').classList.remove('open');
-                }
-            </script>
-
-
-<div id="imagePrincipale">
-    
-</div>
-</header>
-<ul class="ul">
-  <li><a href="https://roidesgueux.github.io/switch/" class="active">
-     <i class="Roms Pokemon Switch"></i>
-     Jeux Switch</a></li>
-     <li><a href="https://roidesgueux.github.io/solo/">
-      <i class="Suite Adobe 2022"></i>
-      Jeux solo</a></li>
-      <li><a href="https://roidesgueux.github.io/multi/">
-        <i class="Suite Adobe 2022"></i>
-        Jeux multi</a></li>
-        <li><a href="https://roidesgueux.github.io/logiciels/">
-          <i class="Suite Adobe 2022"></i>
-          Les logiciels</a></li>
-  <li><a href="https://roidesgueux.github.io/3ds/">
-    <i class=" Tous Les jeux Mario Switch"></i>
-    Jeux Nintendo 3DS</a></li>
-  <li><a href="https://roidesgueux.github.io/ds/">
-    <i class="Rom Pokemon DS"></i>
-  Rom Pokemon DS</a></li>
-  <li><a href="https://roidesgueux.github.io/emulateurs/">
-    <i class="Tous Les Emulateurs"></i>
-  Tous Les Emulateurs</a></li>
-</ul>
-</body>
-</br>
-
-<h2>Jeux Solo</h2>
-<div class="recherche">
-<input type="text" id="searchInput" placeholder="Rechercher..." />
-<button onclick="search()">Rechercher</button>
-<div id="searchResults"></div>
-</div>
-<script>
-
-function search() {
-      var input = document.getElementById("searchInput");
-      var query = input.value;
-
-      // Effectuez ici la logique de traitement de la recherche
-      // Par exemple, interrogez une API ou une base de données pour récupérer les résultats correspondants à la requête
-
-      // Affichez les résultats
-      var resultsDiv = document.getElementById("searchResults");
-      resultsDiv.innerHTML = "Voici les résultats de votre recherche pour \"" + query + "\":";
-      // Affichez ici les résultats de la recherche dans le div "searchResults"
-    }
-  </script>
-</script>
-
-
-
-    <div id="prestations">
-      <div class="imagesPrestations" >
-        <div class="ecarlate">
-        <a href="liens/1/1.html"><img src="img/lien/jeux solo/dark-souls-iii.png" alt="ecarlate" style="height:auto" ></a>
-      <div class="txt-ecarlate">
-          <h5>  Voici la rom du jeu Dark Souls 3...
-         </h5>
-        </div>
-      </div>
-      <div class="imagesPrestations">
-        <div class="txt-violet">
-          <h5>Voici la rom du jeu Dark Souls 2 (ALL DLC’s)...</h5>
-        </div>
-      
-        <div class="violet">
-          <a href="liens/1/2.html"><img src="img/lien/jeux solo/dark-souls-ii.png" alt="violet" style="height:auto" ></a>
-        </div>
-      </div>
-      <div class="imagesPrestations" >
-        <div class="ecarlate">
-        <a href="liens/1/3.html"><img src="img/lien/jeux solo/dark-souls-ii-scholar-of-the-first-sin.png" alt="diamant&perle" style="height:auto" ></a>
-      <div class="txt-ecarlate">
-          <h5>Voici la rom du jeu Dark Souls II: Scholar Of The First Sin...
-        </div>
-      </div>
-        <div class="imagesPrestations">
-          <div class="txt-violets">
-            <h5>Voici la rom du jeu Dark Souls: Remastered...
-             </h5>
-          </div>
-          <div class="violet">
-            <a href="liens/1/4.html"><img src="img/lien/jeux solo/dark-souls-remastered.png" alt="audition" style="height:auto" ></a>
-          </div>
-      </div>
-      <div class="imagesPrestations" >
-        <div class="ecarlate">
-        <a href="liens/1/5.html"><img src="img/lien/jeux solo/dark-souls-prepare-to-die-edition.png" alt="diamant&perle" style="height:auto" ></a>
-      <div class="txt-ecarlate">
-          <h5>Voici la rom du jeu Dark Souls: Prepare To Die Edition...
-      </h5>
-        </div>
-      </div>
      
-  
-      
-        
-      </div>
-      
-   
-  </div>
-      
-  <div class="wp-pagenavi" role="navigation">
-    <span aria-current="page" class="current">1</span><a class="page larger" title="Page 2" href="index1.html">2</a><a class="page larger" title="Page 3" href="index2.html">3</a><a class="page larger" title="Page 4" href="index3.html">4</a><a class="page larger" title="Page 5" href="page5.html">5</a><a class="page larger" title="Page 6" href="page6.html">6</a><a class="page larger" title="Page 7" href="page7.html">7</a><span class="extend">...</span><a class="nextpostslink" rel="next" aria-label="Next Page" href="page2.html">Next</a>
-    </div>
+            <!-- End Promotional Bar Section -->
 
-    
+            <!-- Start Header Section -->
+            <header class="header bg-white">
+                <div class="container-fluid full-header">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- Start Navigation -->
+                        <nav class="navigation navbar position-static navbar-expand-lg p-0 w-50">
+                            <div id="navbar-collapse" class="navbar-collapse collapse dual-nav">
+                                <a href="#" class="closeNav-btn d-lg-none clearfix" id="closeNav" title="Close"><span class="menu-close mr-2">Close</span><i class="ti-close" aria-hidden="true"></i></a>
+                                <ul class="navbar-nav">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link" href="#">Home<span class="arw plush" title="Click to show/hide"></span></a>  
+                                       
+                                        <!-- End Megamenu Dropdown -->
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://roidesgueux.github.io/mes-chaines/">Chaînes
+                                            <span class="arw plush" title="Click to show/hide"></span>
+                                     </a>  
+                                        <!-- Start Megamenu Style 1 --> 
+                                        <div class="megamenu submenu style1">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-12 col-lg-6">
+                                                        <div class="row">
+                                                            <div class="megamenu-lvl col-12 col-sm-12 col-lg-4">
+                                                                <h3>Youtube</h3>
+                                                                <ul>
+                                                                    <li><a class="item" href="https://www.youtube.com/@Roi_Des_Gueux">Chaîne principal</a></li>
+                                                                    <li><a class="item" href="https://www.youtube.com/channel/UC2mJniyU6nwuUUjUUaFguEw">Chaîne Tuto</a></li>
+                                                                    <li><a class="item" href="https://www.youtube.com/@Roi_Des_Gueux_Replay">Chaîne Replay</a></li>
+                                                                   
+                                                                </ul>
+                                                            </div>
+                                                            <div class="megamenu-lvl col-12 col-sm-12 col-lg-4">
+                                                                <h3>Vidéos Verticale</h3>
+                                                                <ul>
 
+                                                                    <li><a class="item" href="https://www.tiktok.com/@roi_des_geueux">TikTok</a></li>
+                                                                    <li><a class="item" href="https://www.youtube.com/@Roi_Des_Gueux">Instagram</a></li>
+                                                            
+                                                                </ul>
+                                                            </div>
+                                                            <div class="megamenu-lvl col-12 col-sm-12 col-lg-4">
+                                                                <h3>Live</h3>
+                                                                <ul>
+                                                                    <li><a class="item" href="https://www.twitch.tv/roi_des_gueux_">Twitch</a></li>
+                            
 
-    </footer>
-    <div id="deuxiemeTrait"></div>
-      <div id="copyrightEtIcons">
-        <div id="copyright">
-          <span></br></br></br></br></br></br></br></br></br></br>© Roi_Des_Gueux(); 2022</span>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="megamenu-lvl col-12 col-sm-12 col-lg-4">
+                                                                <h3>Autres</h3>
+                                                                <ul>
+                                                                    <li><a class="item" href="https://discord.gg/PQUytB5w6z">Discord</a></li>
+                                                                    <li><a class="item" href="https://roidesgueux.github.io/music/">Song</a></li>
+                                                                    
+                                                                </ul>
+                                                            </div>
+                                                       
+                                                        </div>
+                                                    </div>
+                                                    <div class="megamenu-lvl product-col col-12 col-sm-12 col-lg-3">
+                                                        <h3>Song</h3>
+                                                        <div class="product">
+                                                            <a class="pro-img" href="https://roidesgueux.github.io/mes-chaines/"><img class="img-fluid blur-up lazyload" src="assets/images/megamenu/logo.png" data-src="assets/images/megamenu/logo.png" alt="image" title="Naminos elementum disus tincidunts cosmo de cosmopolis" /></a>
+                                                            <div class="pro-details">
+                                                                <p class="star-rating">
+                                                                    <i class="spr-icon fa fa-star"></i>
+                                                                    <i class="spr-icon fa fa-star"></i>
+                                                                    <i class="spr-icon fa fa-star"></i>
+                                                                    <i class="spr-icon fa fa-star"></i>
+                                                                    <i class="spr-icon fa fa-star"></i>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="megamenu-lvl banner-col col-12 col-sm-12 col-lg-3">
+                                                        <a href="https://roidesgueux.github.io/music/"><img class="img-fluid blur-up lazyload" src="assets/images/megamenu/song.png" data-src="assets/images/megamenu/song.png" alt="image" title="image" /></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Megamenu Style 1 -->
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Song
+                                            <span class="arw plush" title="Click to show/hide"></span>
+                                        </a>  
+                                        <!-- Start Megamenu Style 2 -->
+                                        <div class="megamenu submenu style2">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-12 col-lg-6">
+                                                        <div class="row">
+                                                            <div class="megamenu-lvl col-12 col-sm-12 col-lg-4">
+                                                                <h3>Accueil</h3>
+                                                                <ul>
+                                                                    <li><a class="item" href="https://roidesgueux.github.io/music/">Accueil </a></li>
+                                                                 
+                                                                </ul>
+                                                            </div>
+                                                            <div class="megamenu-lvl col-12 col-sm-12 col-lg-4">
+                                                                <h3>Les clasiques</h3>
+                                                                <ul>
+                                                                    <li><a class="item" href="https://roidesgueux.github.io/playlist-3/">accueil</a></li>
+                                                                    <li><a class="item" href="https://roidesgueux.github.io/playlist-3/blog-single.html">musique 1</a></li>
+                                                                    <li><a class="item" href="https://roidesgueux.github.io/playlist-3/blog-singles.html">musique 2</a></li>
+                                                                    <li><a class="item" href="https://roidesgueux.github.io/playlist-3/blog-singless.html">musique 3</a></li>
+                                                                
+                                                                </ul>
+                                                            </div>
+                                                            <div class="megamenu-lvl col-12 col-sm-12 col-lg-4">
+                                                                <h3>Playlist ambiance</h3>
+                                                                <ul>
+                                                                    <li><a class="item" href="https://roidesgueux.github.io/playlist-1-/">accueil</a></li>
+                                                                    <li><a class="item" href="https://roidesgueux.github.io/playlist-1-/blog-single.html">musique 1</a></li>
+                                                                    <li><a class="item" href="https://roidesgueux.github.io/playlist-1-/blog-singles.html">musique 2</a></li>
+                                                                    <li><a class="item" href="https://roidesgueux.github.io/playlist-1-/blog-singless.html">musique 3</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="megamenu-lvl col-12 col-sm-12 col-lg-4">
+                                                                <h3>Playlist tryhard</h3>
+                                                                <ul>
+                                                                    <li><a class="item" href="https://roidesgueux.github.io/playlist-2/">accueil</a></li>
+                                                                    <li><a class="item" href="https://roidesgueux.github.io/playlist-2/blog-single.html">musique 1</a></li>
+                                                                    <li><a class="item" href="https://roidesgueux.github.io/playlist-2/blog-singles.html">musique 2</a></li>
+                                                                    <li><a class="item" href="https://roidesgueux.github.io/playlist-2/blog-singless.html">musique 3</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="megamenu-lvl col-12 col-sm-12 col-lg-4">
+                                                                <h3>Mes choix de musique</h3>
+                                                                <ul>
+                                                                    <li><a class="item" href="https://roidesgueux.github.io/music/songs-one.html">musique </a></li>
+                                                                   
+                                                            </div>
+                                                           
+                                                         
+                                                        </div>
+                                                    </div>
+                                                    <div class="megamenu-lvl banner-col col-12 col-sm-12 col-lg-3">
+                                                        <div class="row">
+                                                            <div class="col-sm-12 img1">
+                                                                <a href="#"><img class="img-fluid blur-up lazyload" src="assets/images/megamenu/song 1.png" data-src="assets/images/megamenu/song 1.png" alt="image" title="image" /></a>
+                                                            </div>
+                                                            <div class="col-sm-12 img2">
+                                                                <a href="#"><img class="img-fluid blur-up lazyload" src="assets/images/megamenu/song 2.png" data-src="assets/images/megamenu/song 2.png" alt="image" title="image" /></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="megamenu-lvl banner-col col-12 col-sm-12 col-lg-3">
+                                                        <a href="#"><img class="img-fluid blur-up lazyload" src="assets/images/megamenu/song att.png" data-src="assets/images/megamenu/song att.png" alt="image" title="image" /></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Megamenu Style 2 -->
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Animé
+                                            <span class="arw plush" title="Click to show/hide"></span>
+                                        </a>  
+                                        <!-- Start Megamenu Style 3 -->
+                                        <div class="megamenu submenu style3">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <div class="row">
+                                                            <div class="megamenu-lvl col-12 col-sm-12 col-lg-3">
+                                                                <h3>ACCUEIL</h3>
+                                                                <ul>
+                                                                    <li class="item-img"><a href="https://roidesgueux.github.io/anime/" class="img"><img class="img-fluid blur-up lazyload" src="assets/images/megamenu/1.png" data-src="assets/images/megamenu/1.png" alt="image" title="image" /></a></li>
+                                                             
+                                                                </ul>
+                                                            </div>
+                                                            <div class="megamenu-lvl col-12 col-sm-12 col-lg-3">
+                                                                <h3>VOSTFR</h3>
+                                                                <ul>
+                                                                    <li class="item-img"><a href="https://roidesgueux.github.io/vostfr/" class="img"><img class="img-fluid blur-up lazyload" src="assets/images/megamenu/2.png" data-src="assets/images/megamenu/2.png" alt="image" title="image" /></a></li>
+                                                             
+                                                                </ul>
+                                                            </div>
+                                                            <div class="megamenu-lvl col-12 col-sm-12 col-lg-3">
+                                                                <h3>VF</h3>
+                                                                <ul>
+                                                                    <li class="item-img"><a href="https://roidesgueux.github.io/VF/" class="img"><img class="img-fluid blur-up lazyload" src="assets/images/megamenu/3.png" data-src="assets/images/megamenu/3.png" alt="image" title="image" /></a></li>
+                                                               
+                                                                </ul>
+                                                            </div>
+                                                            <div class="megamenu-lvl col-12 col-sm-12 col-lg-3">
+                                                                <h3>PLANIFICATION</h3>
+                                                                <ul>
+                                                                    <li class="item-img"><a href="https://roidesgueux.github.io/planification/" class="img"><img class="img-fluid blur-up lazyload" src="assets/images/megamenu/4.png" data-src="assets/images/megamenu/4.png" alt="image" title="image" /></a></li>
+                                                                 
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Megamenu Dropdown -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- Start Navigation -->
+                        <!-- Start Logo -->
+                        <div class="navbar-brand logo mx-auto p-0 text-center">
+                            <a href="index.html" class="logo-img"><img class="img-fluid" src="assets/images/logo/logo.png" alt="logo" title="Posh Auto Parts" /></a>
+                        </div>
+                        <!-- End Logo -->
+                        <!-- Start Right Menu -->
+                        <div class="w-50 right-side">
+                            <!-- Start Minicart -->
+                           
+                            </div>
+                            <!-- End Minicart -->
+                            <!-- Start Setting Menu -->
+                            <div class="setting-menu float-right">
+                                <a href="#" class="setting-toggle" title="My Account">                
+                                    <i class="icon ti-settings"></i>
+                                </a>
+                                <div class="settinglinks" style="display:none">
+                                    <!-- Menu Links -->
+                                   
+                                    <!-- Emd Menu Links -->
+                                    <!-- Start Currency Picker --> 
+                                    <div class="my-currency">
+                                        <a href="https://roidesgueux.github.io/contactez-moi/"> <h4>Contact</h4></a>
+                                     
+                                    </div>
+                                    <!-- End Currency Picker -->
+                                    <!-- Start Languages --> 
+                              
+                                    <!-- End Languages -->
+                                </div>
+                            </div>
+                            <!-- End Setting Menu -->
+                            <!-- Start Search Box -->
+                            <div class="search-box float-right">
+                                <a href="#" title="Search" class="search-open search-toggle" data-toggle="modal" data-target="#searchform">
+                                    <i class="icon ti-search"></i> 
+                                </a>
+                            </div>
+                            <!-- End Search Show -->
+                        </div>
+                        <!-- End Right Menu -->
+                    </div>
+                </div>
+            </header>
+            <!-- End Header Section -->
+
+            <!-- Start Main Content -->
+            <main class="main-content">
+                <!-- Start Breadcrumb -->
+                <div class="breadcrumbs text-center">
+                    <div class="container">
+                        <h1>Pleins De JEUX SOLO
+                        </h1>
+                        <ul class="breadcrumb bg-transparent m-0 p-0 justify-content-center">
+                            <li class="breadcrumb-item"><a href="https://roidesgueux.github.io/liens/" title="Home">Home</a></li>
+                            <li class="breadcrumb-item active">JEUX SOLO
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Breadcrumb -->
+
+                <!-- Start Blog Inner -->
+                <div class="blog-content-inner">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Start Product Filter -->
+                            <div class=" col-12 col-sm-12 col-lg-3 blog-sidebar sidebar sidebar-left">
+                                <!-- Start Blog Search -->
+                                <div class="cms-block blog-search">
+                                    <form action="#">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Recherche..." />                                   
+                                            <button class="btn search-btn" type="submit"><i class="ti-search"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- End Blog Search -->
+
+                                <!-- Start Categories -->
+                                <div class="cms-block categories">
+                                    <h4 class="sub-title">Categories</h4>
+                                    <div class="cms-block-content">
+                                        <ul class="list sidebar-collections">
+                                            <li><a href="https://roidesgueux.github.io/solo/index.html">solo</a></li>
+                                            <li><a href="https://roidesgueux.github.io/multi/">multi</a></li>
+                                            <li><a href="https://roidesgueux.github.io/logiciels/">logiciels</a></li>
+                                            <li><a href="https://roidesgueux.github.io/emulateurs/">émulateurs</a></li>
+                                            <li><a href="https://roidesgueux.github.io/switch/">switch</a></li>
+                                            <li><a href="https://roidesgueux.github.io/3ds/">3ds</a></li>
+                                            <li><a href="https://roidesgueux.github.io/ds/">ds</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- End Categories -->
+
+                                <!-- Start Popular Tags -->
+                                <div class="cms-block popular-tags">
+                                    <h4 class="sub-title">Popular Genre</h4>
+                                    <div class="cms-block-content">
+                                        <ul class="d-flex flex-row flex-wrap color-item">
+                                            <li><a href="#">Action-RPG</a></li>
+                                            <li><a href="#">Simulation</a></li>
+                                            <li><a href="#">Stratégie</a></li>
+                                            <li><a href="#">Jeu vidéo de rôle</a></li>
+                                            <li><a href="#">Action-Jeu de combat</a></li>
+                                            <li><a href="#">Action- Jeu vidéo de course</a></li>
+                                            <li><a href="#">Jeu d'aventure                                            </a></li>
+                                            <li class="tag-btn"><a class="btn btn-secondary" href="https://roidesgueux.github.io/liens/">View All</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- End Popular Tags -->
+
+                     
+                            </div>
+                            <!-- End Product Filter -->
+
+                            <!-- Start Blog Grid -->
+                            <div class="blog-view-items product-grid col-12 col-sm-12 col-lg-9 sidebar-right">
+                                <div class="row row-sp row-eq-height">
+                                    <!-- Start Blog Item -->
+                                    <div class="col-sp blog-item col-12 col-sm-6 col-md-6">
+                                        <!-- Start Blog Image -->
+                                        <div class="blog-img mb-4">
+                                            <a href="https://roidesgueux.github.io/solo/liens/1/1.html" class="animate-scale"><img class="img-fluid blur-up lazyload" src="assets/images/jeux solo/dark-souls-iii.png" data-src="assets/images/jeux solo/dark-souls-iii.png" alt="image" title="Aliquam tincidunt mauris eu risus" /></a>
+                                        </div>
+                                        <!-- End Blog Image -->
+                                        <!-- Start Blog Details -->
+                                        <div class="blog-details">
+                                            <h3><a href="https://roidesgueux.github.io/solo/liens/1/1.html">VOICI LA ROM DU JEU DARK SOULS 3...</a></h3>
+                                            <div class="article-by mb-4 clearfix">
+                                                <span class="article-author float-left"><i class="fa fa-user mr-1"></i> by Roi_Des_Gueux</span>
+                                            </div>
+                                            <div class="blog-content mb-3">
+                                                <p class="mb-2">Dark Souls III est un jeu vidéo de type Action-RPG à la troisième personne de dark fantasy développé par FromSoftware et édité par Bandai Namco ...</p>
+                                            </div>
+                                            <a href="https://roidesgueux.github.io/solo/liens/1/1.html" class="btn btn-secondary">Read More<i class="ml-2 fa fa-long-arrow-right"></i></a>
+                                        </div>
+                                        <!-- End Blog Details -->
+                                    </div>
+                                    <!-- End Blog Item -->
+                                    <!-- Start Blog Item -->
+                                    <div class="col-sp blog-item col-12 col-sm-6 col-md-6">
+                                        <!-- Start Blog Image -->
+                                        <div class="blog-img mb-4">
+                                            <a href="https://roidesgueux.github.io/solo/liens/1/2.html" class="animate-scale"><img class="img-fluid blur-up lazyload" src="assets/images/jeux solo/dark-souls-ii.png" data-src="assets/images/jeux solo/dark-souls-ii.png" alt="image" title="Aliquam tincidunt mauris" /></a>
+                                        </div>
+                                        <!-- End Blog Image -->
+                                        <!-- Start Blog Details -->
+                                        <div class="blog-details">
+                                            <h3><a href="https://roidesgueux.github.io/solo/liens/1/2.html">VOICI LA ROM DU JEU DARK SOULS 2 (ALL DLC’S)...</a></h3>
+                                            <div class="article-by mb-4 clearfix">
+                                                <span class="article-author float-left"><i class="fa fa-user mr-1"></i> by Roi_Des_Gueux</span>
+                                            </div>
+                                            <div class="blog-content mb-3">
+                                                <p class="mb-2">Dark Souls II est un jeu vidéo en monde ouvert de type action-RPG développé par From Software et édité par Namco Bandai.
+                                                    Le jeu sort en mars 2014 ...</p>
+                                            </div>
+                                            <a href="https://roidesgueux.github.io/solo/liens/1/2.html" class="btn btn-secondary">Read More<i class="ml-2 fa fa-long-arrow-right"></i></a>
+                                        </div>
+                                        <!-- End Blog Details -->
+                                    </div>
+                                    <!-- End Blog Item -->
+                                    <!-- Start Blog Item -->
+                                    <div class="col-sp blog-item col-12 col-sm-6 col-md-6">
+                                        <!-- Start Blog Image -->
+                                        <div class="blog-img mb-4">
+                                            <a href="https://roidesgueux.github.io/solo/liens/1/3.html" class="animate-scale"><img class="img-fluid blur-up lazyload" src="assets/images/jeux solo/dark-souls-ii-scholar-of-the-first-sin.png" data-src="assets/images/jeux solo/dark-souls-ii-scholar-of-the-first-sin.png" alt="image" title="Loremous Comodous - Trending" /></a>
+                                        </div>
+                                        <!-- End Blog Image -->
+                                        <!-- Start Blog Details -->
+                                        <div class="blog-details">
+                                            <h3><a href="https://roidesgueux.github.io/solo/liens/1/3.html">VOICI LA ROM DU JEU DARK SOULS II: SCHOLAR OF THE FIRST SIN...</a></h3>
+                                            <div class="article-by mb-4 clearfix">
+                                                <span class="article-author float-left"><i class="fa fa-user mr-1"></i> by Roi_Des_Gueux</span>
+                                            </div>
+                                            <div class="blog-content mb-3">
+                                                <p class="mb-2">Dans DARK SOULS™ II: Scholar of the First Sin, la difficulté et l'univers captivant désormais marque de fabrique de la franchise ...</p>
+                                            </div>
+                                            <a href="https://roidesgueux.github.io/solo/liens/1/3.html" class="btn btn-secondary">Read More<i class="ml-2 fa fa-long-arrow-right"></i></a>
+                                        </div>
+                                        <!-- End Blog Details -->
+                                    </div>
+                                    <!-- End Blog Item -->
+                                    <!-- Start Blog Item -->
+                                    <div class="col-sp blog-item col-12 col-sm-6 col-md-6">
+                                        <!-- Start Blog Image -->
+                                        <div class="blog-img mb-4">
+                                            <a href="https://roidesgueux.github.io/solo/liens/1/4.html" class="animate-scale"><img class="img-fluid blur-up lazyload" src="assets/images/jeux solo/dark-souls-remastered.png" data-src="assets/images/jeux solo/dark-souls-remastered.png" alt="image" title="The standard Lorem Ipsum" /></a>
+                                        </div>
+                                        <!-- End Blog Image -->
+                                        <!-- Start Blog Details -->
+                                        <div class="blog-details">
+                                            <h3><a href="https://roidesgueux.github.io/solo/liens/1/4.html">VOICI LA ROM DU JEU DARK SOULS: REMASTERED...</a></h3>
+                                            <div class="article-by mb-4 clearfix">
+                                                <span class="article-author float-left"><i class="fa fa-user mr-1"></i> by Roi_Des_Gueux</span>
+                                            </div>
+                                            <div class="blog-content mb-3">
+                                                <p class="mb-2">Dark Souls Remastered sur PS4 est un jeu de rôle orienté action très difficile se déroulant dans un univers infesté de démons ...</p>
+                                            </div>
+                                            <a href="https://roidesgueux.github.io/solo/liens/1/4.html" class="btn btn-secondary">Read More<i class="ml-2 fa fa-long-arrow-right"></i></a>
+                                        </div>
+                                        <!-- End Blog Details -->
+                                    </div>
+                                    <!-- End Blog Item -->
+                                    <!-- Start Blog Item -->
+                                    <div class="col-sp blog-item col-12 col-sm-6 col-md-6">
+                                        <!-- Start Blog Image -->
+                                        <div class="blog-img mb-4">
+                                            <a href="https://roidesgueux.github.io/solo/liens/1/5.html" class="animate-scale"><img class="img-fluid blur-up lazyload" src="assets/images/jeux solo/dark-souls-prepare-to-die-edition.png" data-src="assets/images/jeux solo/dark-souls-prepare-to-die-edition.png" alt="image" title="Finibus Bonorum et Malorum" /></a>
+                                        </div>
+                                        <!-- End Blog Image -->
+                                        <!-- Start Blog Details -->
+                                        <div class="blog-details">
+                                            <h3><a href="https://roidesgueux.github.io/solo/liens/1/5.html">VOICI LA ROM DU JEU DARK SOULS: PREPARE TO DIE EDITION...</a></h3>
+                                            <div class="article-by mb-4 clearfix">
+                                                <span class="article-author float-left"><i class="fa fa-user mr-1"></i> by Roi_Des_Gueux</span>
+                                            </div>
+                                            <div class="blog-content mb-3">
+                                                <p class="mb-2">Dark Souls note 1 est un jeu vidéo de type action-RPG développé par l'entreprise japonaise FromSoftware et édité par Namco Bandai ...</p>
+                                            </div>
+                                            <a href="https://roidesgueux.github.io/solo/liens/1/5.html" class="btn btn-secondary">Read More<i class="ml-2 fa fa-long-arrow-right"></i></a>
+                                        </div>
+                                        <!-- End Blog Details -->
+                                    </div>
+                                    <!-- End Blog Item -->
+                                    <!-- Start Blog Item -->
+                                    <div class="col-sp blog-item col-12 col-sm-6 col-md-6">
+                                        <!-- Start Blog Image -->
+                                        <div class="blog-img mb-4">
+                                            <a href="https://roidesgueux.github.io/solo/liens/2/2.html" class="animate-scale"><img class="img-fluid blur-up lazyload" src="assets/images/jeux solo/cities (1).png" data-src="assets/images/jeux solo/cities (1).png" alt="image" title="1914 translation by H. Rackham" /></a>
+                                        </div>
+                                        <!-- End Blog Image -->
+                                        <!-- Start Blog Details -->
+                                        <div class="blog-details">
+                                            <h3><a href="https://roidesgueux.github.io/solo/liens/2/2.html">VOICI LA ROM DU JEU CITIES: SKYLINES (ALL DLC’S)...</a></h3>
+                                            <div class="article-by mb-4 clearfix">
+                                                <span class="article-author float-left"><i class="fa fa-user mr-1"></i> by Roi_Des_Gueux</span>
+                                            </div>
+                                            <div class="blog-content mb-3">
+                                                <p class="mb-2">Cities: Skylines est un jeu vidéo de gestion développé par Colossal Order et édité par Paradox Interactive sur Windows, Mac OS et Linux ...</p>
+                                            </div>
+                                            <a href="https://roidesgueux.github.io/solo/liens/2/2.html" class="btn btn-secondary">Read More<i class="ml-2 fa fa-long-arrow-right"></i></a>
+                                        </div>
+                                        <!-- End Blog Details -->
+                                    </div>
+                                    <!-- End Blog Item -->
+                                    <!-- Start Blog Item -->
+                                    <div class="col-sp blog-item col-12 col-sm-6 col-md-6">
+                                        <!-- Start Blog Image -->
+                                        <div class="blog-img mb-4">
+                                            <a href="https://roidesgueux.github.io/solo/liens/2/3.html" class="animate-scale"><img class="img-fluid blur-up lazyload" src="assets/images/jeux solo/kings III.png" data-src="assets/images/jeux solo/kings III.png" alt="image" title="1914 translation by H. Rackham" /></a>
+                                        </div>
+                                        <!-- End Blog Image -->
+                                        <!-- Start Blog Details -->
+                                        <div class="blog-details">
+                                            <h3><a href="https://roidesgueux.github.io/solo/liens/2/3.html">VOICI LA ROM DU JEU CRUSADER.KINGS.III...</a></h3>
+                                            <div class="article-by mb-4 clearfix">
+                                                <span class="article-author float-left"><i class="fa fa-user mr-1"></i> by Roi_Des_Gueux</span>
+                                            </div>
+                                            <div class="blog-content mb-3">
+                                                <p class="mb-2">Crusader Kings III est un jeu vidéo de grande stratégie développé par Paradox Development Studio sorti le 1ᵉʳ septembre 2020 ...</p>
+                                            </div>
+                                            <a href="https://roidesgueux.github.io/solo/liens/2/3.html" class="btn btn-secondary">Read More<i class="ml-2 fa fa-long-arrow-right"></i></a>
+                                        </div>
+                                        <!-- End Blog Details -->
+                                    </div>
+                                    <!-- End Blog Item -->
+                                    <!-- Start Blog Item -->
+                                    <div class="col-sp blog-item col-12 col-sm-6 col-md-6">
+                                        <!-- Start Blog Image -->
+                                        <div class="blog-img mb-4">
+                                            <a href="404.html" class="animate-scale"><img class="img-fluid blur-up lazyload" src="assets/images/jeux solo/assetto corsa.png" data-src="assets/images/jeux solo/assetto corsa.png" alt="image" title="Aliquam tincidunt mauris" /></a>
+                                        </div>
+                                        <!-- End Blog Image -->
+                                        <!-- Start Blog Details -->
+                                        <div class="blog-details">
+                                            <h3><a href="404.html">VOICI LA ROM DU JEU ASSETTO CORSA COMPETIZIONE (ALL DLC)...</a></h3>
+                                            <div class="article-by mb-4 clearfix">
+                                                <span class="article-author float-left"><i class="fa fa-user mr-1"></i> by Roi_Des_Gueux</span>
+                                            </div>
+                                            <div class="blog-content mb-3">
+                                                <p class="mb-2">Assetto Corsa Competizionne est un jeu vidéo de simulation de course automobile développé par le studio italien Kunos Simulazioni ...</p>
+                                            </div>
+                                            <a href="404.html" class="btn btn-secondary">Read More<i class="ml-2 fa fa-long-arrow-right"></i></a>
+                                        </div>
+                                        <!-- End Blog Details -->
+                                    </div>
+                                    <!-- End Blog Item -->
+                                </div>
+                                <!-- Start Pagination -->
+                                <nav class="blog-pagination my-sm-5 my-3 d-flex justify-content-center" aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        <li class="page-item"><a class="page-link rounded-0" href="#"><i class="icon fa fa-long-arrow-left mr-1" aria-hidden="true"></i> Prev</a></li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link rounded-0" href="#">Next <i class="icon fa fa-long-arrow-right ml-1" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </nav>
+                                <!-- End Pagination -->
+                            </div>
+                            <!-- End Blog Grid -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Blog Inner -->
+            </main>
+            <!-- End Main Content -->
+
+              <!-- Start Footer Section -->
+              <footer class="footer">
+                <div class="footer-top clearfix">
+                    <div class="container">
+                       
+                        <div class="copyright-content pt-md-1 pull-left"> 
+                            <span class="content"> Copyright &copy; 2023 Roi_Des_Gueux. All Rights Reserved.</span> 
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End Footer Section -->
+
+            <!-- Start Scroll Top -->
+            <div id="scrollTop"><i class="ti-arrow-up"></i></div>
+            <!-- End Scroll Top -->
+
+            <!-- Start Search Drawer -->
+            <div class="search-area modal fade top" id="searchform" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true">
+                <div class="modal-dialog modal-frame modal-top modal-notify modal-info" role="document">
+                    <div class="container">
+                        <div class="modal-content search-inline align-content-center">
+                            <div class="search-head position-relative">
+                                <h3>Cherche ton jeu plus facilement </h3>
+                                <a class="search-close" data-dismiss="modal" aria-label="Close">
+                                    <i class="ti-close" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <form action="#" class="position-relative">
+                                <input type="text" class="form-control" placeholder="Recherche de jeu..." required />
+                                <button class="search-btn" type="submit"><i class="ti-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Search Drawer -->
+
+            <!-- Overlay -->
+            <div class="overlay"></div>
+
         </div>
-      </div>
-  </body>
+        <!--  End Main Wrapper -->
 
+        <!-- *********** JS Files *********** -->        
+        <!-- Plugin JS -->	        
+        <script src="assets/js/plugins.js"></script>
+
+        <!-- Main JS -->
+        <script src="assets/js/main.js"></script>
+
+    </body>
 </html>
+
